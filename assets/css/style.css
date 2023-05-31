@@ -106,20 +106,178 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+/*=================================
+  main header styling starts here
+=================================*/
+.main-header-container{
+  background-color: #EBE9EB;
+}
 
+.main-header{
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  gap: 4.25%;
+}
 
+.logo{
+  display: flex;
+  align-items: center;
+}
 
+.logo > a{
+  color: #757076;
+  font-size: 16px;
+}
 
+.submenu a {
+  display: flex;
+  align-items: center;
+  text-indent: -9999px;
+}
+.submenu a::before {
+  color: #A4A6A5;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
 
+.microsoft::before {
+  content: "\f3ca";
+  padding-right: 7px;
+  font-size: 24px;
+}
 
+.header-nav > ul{
+  display: flex;
+  align-items: center;
+  gap: 57px;
+}
+
+.header-nav a{
+  color: #5B5D5C;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.dropdown-container{
+  display: flex;
+}
+
+.dropdown::before{
+  content: "\f107";
+  padding-left: 6px;
+  font-size: 10px;  
+}
+
+.cart-search{
+  display: flex;
+  gap: 90.5%;
+}
+
+.cart-search a {
+  text-indent: -9999px;
+}
+.cart-search a::before {
+  color: #A4A6A5;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
+}
+
+.search::before {
+  content: "\f002";
+  font-size: 18px;
+}
+
+.shop::before {
+  content: "\f07a";
+  font-size: 18px;
+}
+/*=================================
+  main header styling ends here
+=================================*/
+/*=================================
+  sub header styling starts here
+=================================*/
+.sub-header-container{
+  background-color: #2F59A8;
+}
+
+.sub-header-container a{
+  color: #B9CDD9;
+}
+
+.sub-header{
+  padding: 19px 0;
+  display: flex;
+  align-items: center;
+  gap: 4.5%;
+}
+
+.sub-logo > a{
+  font-size: 20px;
+}
+/*=================================
+  sub header styling ends here
+=================================*/
 /*=================================
   Header styling ends here
 =================================*/  
-
 /*=================================
-  main styling starts here
+main styling starts here
 =================================*/
+/*=================================
+banner section styling starts here
+=================================*/
+.banner-section{
+  width: 100%;
+  height: 525px;
+  background: url("https://dummyimage.com/1350x525/4d444d/fff");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.banner-top{
+  display: flex;
+}
+
+.nav-box{
+  padding: 9px 10px 12px;
+  display: flex;
+  background-color: #E3E0E8;
+}
+.nav-box a{
+  color: #333436;
+  font-size: 14px;
+}
+
+.dropright-container{
+  display: flex;
+}
+
+.dropright::before{
+  content: "\f105";
+  padding: 0 12px;
+  font-size: 8px;  
+}
+
+.sales-box{
+  padding: 14px 12px 22px;
+  display: flex;
+  background-color: #000;
+}
+
+.sales-box a{
+  color: #fff;
+}
+/*=================================
+banner section styling ends here
+=================================*/
 
 
 
