@@ -235,25 +235,26 @@ main styling starts here
 banner section styling starts here
 =================================*/
 .banner-section{
-  width: 100%;
-  height: 525px;
-  background: url("https://dummyimage.com/1350x525/4d444d/fff");
+  padding-bottom: 94px;
+  background: url("https://dummyimage.com/1350x525/4d444d/4f505e");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .banner-top{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-box{
-  padding: 9px 10px 12px;
+  padding: 10px;
   display: flex;
   background-color: #E3E0E8;
 }
 .nav-box a{
   color: #333436;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .dropright-container{
@@ -263,28 +264,243 @@ banner section styling starts here
 .dropright::before{
   content: "\f105";
   padding: 0 12px;
-  font-size: 8px;  
+  font-size: inherit;  
 }
 
 .sales-box{
-  padding: 14px 12px 22px;
+  padding: 9px 10px 12px;
   display: flex;
+  gap: 20px;
   background-color: #000;
 }
 
 .sales-box a{
   color: #fff;
 }
+
+.sales-phone, .sales-mail{
+  display: flex;
+  align-items: center;
+}
+
+.phone::before{
+  content: "\f095";
+  padding-right: 5px;
+  font-size: 20px;  
+}
+
+.mail::before{
+  content: "\f0e0";
+  padding-right: 5px;
+  font-size: 20px;  
+}
+
+.banner-bottom{
+  margin-top: 60px;
+  color: #DCE2EB;
+}
+
+.main-heading{
+  color: #2D2F32;
+  font-size: 28px;
+}
+
+.banner-bottom > .main-heading{
+  color: #DCE2EB;
+}
+
+.banner-para{
+  max-width: 50%;
+  margin-top: 26px;
+  font-size: 16px;
+}
+
+.banner-name{
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.hyphen::before{
+  content: "\2d";
+  padding-right: 5px;
+  font-size: 14px;  
+}
+
+.video-btn{
+  padding: 10px;
+  border: 2px solid #E9E9EA;
+  display: inline-flex;
+  align-items: center;
+}
+
+.video-btn a{
+  color: #E9E9EA;
+}
+
+.video-btn > .submenu a::before{
+  color: #E9E9EA;
+}
+
+.video-play::before{
+  content: "\f144";
+  padding-right: 10px;
+  font-size: 48px;  
+}
 /*=================================
 banner section styling ends here
 =================================*/
+/*=================================
+digital section styling starts here
+=================================*/
+.digital-section{
+  padding: 84px 0;
+  background-color: #DEDFE3;
+}
 
+.digital-description-image{
+  display: flex;
+  gap: 5.75%;
+}
 
+.digital-description{
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
 
+.digital-para{
+  /* max-width: 36.75%; */
+  color: #2D2D31;
+  font-size: 14px;
+}
 
+.link-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.link-container a{
+  color: #415877;
+}
+/*=================================
+digital section styling ends here
+=================================*/
+/*=================================
+product section styling starts here
+=================================*/
+.product-section{
+  padding: 86px 0 80px;
+  background-color: #EBE9EB;
+}
 
+.product-para{
+  margin: 26px 0 20px;
+  color: #2D2D31;
+  font-size: 14px;
+}
 
+.product-container{
+  padding: 26px 0 36px;
+  border: 1px solid #CCC9CC;
+  border-style: solid none;
+  display: grid;
+  grid-template-columns: 60px 1fr 300px;
+  gap: 20px;
+}
 
+.product-description{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.product-description-para{
+  max-width: 80%;
+}
+
+.product-link{
+  display: flex;
+}
+.product-link > a{
+  color: #415877;
+}
+
+.product-image{
+  justify-self: flex-end;
+}
+/*=================================
+product section styling ends here
+=================================*/
+/*=================================
+resources section styling starts here
+=================================*/
+.resources-section{
+  padding: 76px 0;
+  background-color: #DEDFE3;
+}
+
+.resources-icon-container{
+  display: flex;
+  align-items: center;
+}
+
+.resource::before{
+  content: "\f1e1";
+  padding-right: 6px;
+  font-size: 22px;  
+}
+
+.resources-container{
+  padding: 30px 0;
+  border: 1px solid #CCC9CC;
+  border-style: solid none;
+  display: flex;
+  gap: 16%;
+}
+
+.resource-detail{
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.resource-detail:first-child{
+  gap: 22px;
+}
+
+.resource-blogger{
+  color: #2D2F32;
+  font-size: 16px;
+}
+
+.resource-date, .resource-para{
+  color: #2D2D31;
+  font-size: 14px;
+}
+
+.resource-link{
+  display: flex;
+  align-items: center;
+}
+.resource-link a{
+  color: #2F59A8;
+}
+
+.all-blogs-btn{
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+.all-blogs-btn > a{
+  padding: 14px 16px;
+  background-color: #2E59A8;
+  color: #E9E9EA;
+}
+/*=================================
+resources section styling ends here
+=================================*/
 /*=================================
   main styling ends here
 =================================*/
@@ -292,13 +508,170 @@ banner section styling ends here
 /*=================================
   footer styling starts here
 =================================*/ 
+.footer-top{
+  display: flex;
+}
 
+.digital-download{
+  width: 50%;
+  padding: 62px 0 80px;
+  background-color: #356AC5;
+}
+.digital-download > ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
 
+.footer-icon-container{
+  min-width: 66%;
+  display: flex;
+  align-items: center;
+}
+.footer-icon-container > a{
+  color: #DCE2EB;
+}
 
+.download::before{
+  content: "\f063";
+  padding-right: 14px;
+  font-size: 24px; 
+}
 
+.digital-radio::before{
+  content: "\f566";
+  padding-right: 14px;
+  font-size: 24px; 
+}
 
+.back::before{
+  content: "\f104";
+  padding-right: 14px;
+  font-size: 24px; 
+}
 
+.sales-support{
+  width: 50%;
+  padding: 62px 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  background-color: #13204A;
+}
 
+.sales-container, .support-container{
+  min-width: 50%;
+  display: flex;
+  align-items: center;
+}
+.sales-container > a, .support-container > a{
+  color: #DCE2EB;;
+}
+
+.footer-mid{
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background-color: #524D53;
+}
+.footer-mid span{
+  color: #E9E9EA;
+  font-weight: 600;
+}
+
+.footer-mid > .submenu a::before{
+  color: #E9E9EA;
+}
+
+.facebook::before{
+  content: "\f082";
+  margin-right: 8px;
+  font-size: 34px; 
+}
+
+.twitter::before{
+  content: "\f099";
+  margin-right: 8px;
+  font-size: 34px; 
+}
+
+.linkedin::before{
+  content: "\f0e1";
+  margin-right: 8px;
+  font-size: 34px; 
+}
+
+.youtube::before{
+  content: "\f167";
+  margin-right: 8px;
+  font-size: 34px; 
+}
+
+.footer-bottom{
+  width: 100%;
+  padding: 42px 0;
+  background-color: #E2DDE3;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-heading{
+  margin-bottom: 18px;
+}
+
+.blog-links{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.blog-links a{
+  color: #524D53;
+  font-size: 10px;
+}
+
+.footer-nav{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.country-language{
+  display: flex;
+  align-items: center;
+}
+.country-language a{
+  width: max-content;
+  color: #524D53;
+  font-size: 10px;
+}
+
+.earth::before{
+  content: "\f57d";
+  padding-right: 10px;
+  font-size: 20px; 
+}
+
+.footer-nav-links > ul{
+  display: flex;
+  gap: 3.25%;
+}
+
+.footer-nav-links a{
+  width: max-content;
+  color: #524D53;
+  font-size: 10px;
+}
  /*=================================
   footer styling ends here
 =================================*/ 
