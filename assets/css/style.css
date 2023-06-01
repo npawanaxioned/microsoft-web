@@ -205,12 +205,15 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%;
+  width: 74%;
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper {
+  width: 90%;
+}
 /*=================================
   main header styling starts here
 =================================*/
@@ -219,7 +222,7 @@ li {
 }
 
 .main-header {
-  padding: 18px 0;
+  padding: 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,6 +244,7 @@ li {
 .logo > a {
   color: #757076;
   font-size: 16px;
+  font-weight: 600;
 }
 
 .submenu a {
@@ -273,12 +277,12 @@ li {
   -ms-flex-align: center;
   align-items: center;
   gap: 57px;
+  /* gap: 5%; */
 }
 
 .header-nav a {
-  color: #5b5d5c;
-  font-size: 15px;
-  font-weight: 600;
+  color: #333436;
+  font-size: 14px;
 }
 
 .uppercase {
@@ -317,6 +321,7 @@ li {
 .search::before {
   content: "\f002";
   font-size: 18px;
+  transform: scaleX(-1);
 }
 
 .shop::before {
@@ -370,16 +375,9 @@ banner section styling starts here
   background-size: cover;
 }
 
-.banner-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.banner-top .wrapper {
+  width: 90%;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .nav-box {
@@ -412,6 +410,8 @@ banner section styling starts here
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  position: absolute;
+  right: 0;
   background-color: #000;
 }
 
@@ -451,7 +451,7 @@ banner section styling starts here
   font-size: 28px;
 }
 
-.banner-bottom > .main-heading {
+.banner-bottom .main-heading {
   color: #dce2eb;
 }
 
@@ -479,13 +479,10 @@ banner section styling starts here
 }
 
 .video-btn {
+  width: 15%;
   padding: 10px;
   border: 2px solid #e9e9ea;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  display: flex;
   align-items: center;
 }
 
@@ -532,20 +529,22 @@ digital section styling starts here
 }
 
 .digital-para {
-  /* max-width: 36.75%; */
+  max-width: 64.75%;
   color: #2d2d31;
   font-size: 14px;
+  word-wrap: break-word;
 }
 
 .link-container {
+  /* max-width: 64.75%; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  /* -ms-flex-wrap: wrap; */
+  /* flex-wrap: wrap; */
 }
 .link-container a {
   color: #415877;
