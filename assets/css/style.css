@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
@@ -268,8 +275,17 @@ header .wrapper {
   padding-right: 7px;
   font-size: 24px;
 }
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 190px;
+}
 
-.header-nav > ul {
+.header-nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,7 +293,6 @@ header .wrapper {
   -ms-flex-align: center;
   align-items: center;
   gap: 57px;
-  /* gap: 5%; */
 }
 
 .header-nav a {
@@ -321,6 +336,8 @@ header .wrapper {
 .search::before {
   content: "\f002";
   font-size: 18px;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
@@ -377,6 +394,8 @@ banner section styling starts here
 
 .banner-top .wrapper {
   width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -482,7 +501,11 @@ banner section styling starts here
   width: 15%;
   padding: 10px;
   border: 2px solid #e9e9ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -529,7 +552,7 @@ digital section styling starts here
 }
 
 .digital-para {
-  max-width: 64.75%;
+  max-width: 57.75%;
   color: #2d2d31;
   font-size: 14px;
   word-wrap: break-word;
@@ -641,6 +664,7 @@ resources section styling starts here
 }
 
 .resource-detail {
+  max-width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,6 +874,9 @@ resources section styling ends here
   padding: 42px 0;
   background-color: #e2dde3;
 }
+.footer-bottom .wrapper {
+  width: 90%;
+}
 
 .footer-container {
   display: -webkit-box;
@@ -877,7 +904,7 @@ resources section styling ends here
 
 .blog-links a {
   color: #524d53;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .footer-nav {
@@ -903,7 +930,7 @@ resources section styling ends here
   width: -moz-max-content;
   width: max-content;
   color: #524d53;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .earth::before {
@@ -916,7 +943,7 @@ resources section styling ends here
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 3.25%;
+  gap: 30px;
 }
 
 .footer-nav-links a {
@@ -924,7 +951,7 @@ resources section styling ends here
   width: -moz-max-content;
   width: max-content;
   color: #524d53;
-  font-size: 10px;
+  font-size: 12px;
 }
 /*=================================
   footer styling ends here
