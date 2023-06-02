@@ -239,32 +239,15 @@ header .wrapper {
   gap: 4.25%;
 }
 
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
 .logo > a {
+  display: flex;
+  align-items: center;
   color: #757076;
   font-size: 16px;
   font-weight: 600;
 }
-
-.submenu a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-indent: -9999px;
-}
-.submenu a::before {
-  color: #a4a6a5;
+.logo a::before{
+  color: #757076;
   font-family: "FontAwesome";
   float: left;
   text-indent: 0;
@@ -275,6 +258,7 @@ header .wrapper {
   padding-right: 7px;
   font-size: 24px;
 }
+
 .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,13 +288,18 @@ header .wrapper {
   text-transform: uppercase;
 }
 
-.dropdown-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.dropdown-container a{
   display: flex;
+  align-items: center;
+}
+.dropdown-container a::after{
+  color: #a4a6a5;
+  font-family: "FontAwesome";
+  float: right;
+  text-indent: 0;
 }
 
-.dropdown::before {
+.dropdown::after {
   content: "\f107";
   padding-left: 6px;
   font-size: 10px;
@@ -404,6 +393,7 @@ banner section styling starts here
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-items: center;
   background-color: #e3e0e8;
 }
 .nav-box a {
@@ -417,11 +407,16 @@ banner section styling starts here
   display: flex;
 }
 
-.dropright::before {
+.dropdown-container a::after{
+  color: #a4a6a5;
+  font-family: "FontAwesome";
+}
+
+/* .dropright::before {
   content: "\f105";
   padding: 0 12px;
   font-size: inherit;
-}
+} */
 
 .sales-box {
   padding: 9px 10px 12px;
@@ -446,6 +441,11 @@ banner section styling starts here
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.sales-phone a::before, .sales-mail a::before{
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
 }
 
 .phone::before {
@@ -482,13 +482,14 @@ banner section styling starts here
 
 .banner-name {
   margin: 24px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   font-size: 14px;
+}
+
+.banner-name > p::before{
+  color: #a4a6a5;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
 }
 
 .hyphen::before {
@@ -508,18 +509,23 @@ banner section styling starts here
   -ms-flex-align: center;
   align-items: center;
 }
-
 .video-btn a {
   color: #e9e9ea;
 }
-
-.video-btn > .submenu a::before {
+.video-btn a::after{
   color: #e9e9ea;
+  font-family: "FontAwesome";
+  text-indent: 0;
 }
 
-.video-play::before {
+.video-play{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-play::after {
   content: "\f144";
-  padding-right: 10px;
+  padding-left: 10px;
   font-size: 48px;
 }
 /*=================================
@@ -559,7 +565,7 @@ digital section styling starts here
 }
 
 .link-container {
-  /* max-width: 64.75%; */
+  max-width: 64.75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,6 +577,17 @@ digital section styling starts here
 }
 .link-container a {
   color: #415877;
+}
+
+.link-container a::after {
+  color: #a4a6a5;
+  font-family: "FontAwesome";
+}
+
+.dropright::after{
+  content: "\f105";
+  padding: 0 8px;
+  font-size: inherit;
 }
 /*=================================
 digital section styling ends here
@@ -623,6 +640,12 @@ product section styling starts here
 .product-link > a {
   color: #415877;
 }
+.product-link a::after{
+  color: #a4a6a5;
+  font-family: "FontAwesome";
+  float: right;
+  text-indent: 0;
+}
 
 .product-image {
   justify-self: flex-end;
@@ -645,6 +668,12 @@ resources section styling starts here
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.resources-icon-container p::before{
+  color: #a4a6a5;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
 }
 
 .resource::before {
@@ -700,6 +729,12 @@ resources section styling starts here
 }
 .resource-link a {
   color: #2f59a8;
+}
+.resource-link a::after{
+  color: #a4a6a5;
+  font-family: "FontAwesome";
+  float: right;
+  text-indent: 0;
 }
 
 .all-blogs-btn {
@@ -757,7 +792,7 @@ resources section styling ends here
 }
 
 .footer-icon-container {
-  min-width: 66%;
+  min-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -767,6 +802,12 @@ resources section styling ends here
 }
 .footer-icon-container > a {
   color: #dce2eb;
+}
+.footer-icon-container a::before{
+  color: #dce2eb;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
 }
 
 .download::before {
@@ -809,7 +850,7 @@ resources section styling ends here
 
 .sales-container,
 .support-container {
-  min-width: 50%;
+  min-width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -820,6 +861,12 @@ resources section styling ends here
 .sales-container > a,
 .support-container > a {
   color: #dce2eb;
+}
+.sales-container a::before, .support-container a::before{
+  color: #dce2eb;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
 }
 
 .footer-mid {
@@ -839,6 +886,21 @@ resources section styling ends here
 .footer-mid span {
   color: #e9e9ea;
   font-weight: 600;
+}
+.submenu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-indent: -9999px;
+}
+.submenu a::before {
+  color: #a4a6a5;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
 }
 
 .footer-mid > .submenu a::before {
@@ -931,6 +993,12 @@ resources section styling ends here
   width: max-content;
   color: #524d53;
   font-size: 12px;
+}
+.country-language a::before{
+  color: #524d53;
+  font-family: "FontAwesome";
+  float: left;
+  text-indent: 0;
 }
 
 .earth::before {
