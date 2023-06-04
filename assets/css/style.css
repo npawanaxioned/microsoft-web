@@ -236,17 +236,17 @@ header .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 4.25%;
+  gap: 4rem;
 }
 
 .logo > a {
   display: flex;
   align-items: center;
   color: #757076;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
 }
-.logo a::before{
+.logo a::before {
   color: #757076;
   font-family: "FontAwesome";
   float: left;
@@ -266,7 +266,8 @@ header .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 190px;
+  gap: 14rem;
+  transition: all 0.3s;
 }
 
 .header-nav-links {
@@ -276,23 +277,39 @@ header .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 57px;
+  gap: 3.5rem;
+  transition: all 0.3s;
 }
 
 .header-nav a {
   color: #333436;
-  font-size: 14px;
+  font-size: 17px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  text-indent: -9999px;
+  height: 3px;
+  background-color: #a4a6a5;
+  margin: 5px;
+  width: 25px;
+  transition: all 0.5s ease-out;
 }
 
 .uppercase {
   text-transform: uppercase;
 }
 
-.dropdown-container a{
+.dropdown-container a {
   display: flex;
   align-items: center;
 }
-.dropdown-container a::after{
+.dropdown-container a::after {
   color: #a4a6a5;
   font-family: "FontAwesome";
   float: right;
@@ -356,11 +373,11 @@ header .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 4.5%;
+  gap: 4rem;
 }
 
 .sub-logo > a {
-  font-size: 20px;
+  font-size: 21px;
 }
 /*=================================
   sub header styling ends here
@@ -407,7 +424,7 @@ banner section styling starts here
   display: flex;
 }
 
-.dropdown-container a::after{
+.dropdown-container a::after {
   color: #a4a6a5;
   font-family: "FontAwesome";
 }
@@ -442,7 +459,8 @@ banner section styling starts here
   -ms-flex-align: center;
   align-items: center;
 }
-.sales-phone a::before, .sales-mail a::before{
+.sales-phone a::before,
+.sales-mail a::before {
   font-family: "FontAwesome";
   float: left;
   text-indent: 0;
@@ -485,7 +503,7 @@ banner section styling starts here
   font-size: 14px;
 }
 
-.banner-name > p::before{
+.banner-name > p::before {
   color: #a4a6a5;
   font-family: "FontAwesome";
   float: left;
@@ -512,13 +530,13 @@ banner section styling starts here
 .video-btn a {
   color: #e9e9ea;
 }
-.video-btn a::after{
+.video-btn a::after {
   color: #e9e9ea;
   font-family: "FontAwesome";
   text-indent: 0;
 }
 
-.video-play{
+.video-play {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -584,7 +602,7 @@ digital section styling starts here
   font-family: "FontAwesome";
 }
 
-.dropright::after{
+.dropright::after {
   content: "\f105";
   padding: 0 8px;
   font-size: inherit;
@@ -640,7 +658,7 @@ product section styling starts here
 .product-link > a {
   color: #415877;
 }
-.product-link a::after{
+.product-link a::after {
   color: #a4a6a5;
   font-family: "FontAwesome";
   float: right;
@@ -669,7 +687,7 @@ resources section styling starts here
   -ms-flex-align: center;
   align-items: center;
 }
-.resources-icon-container p::before{
+.resources-icon-container p::before {
   color: #a4a6a5;
   font-family: "FontAwesome";
   float: left;
@@ -730,7 +748,7 @@ resources section styling starts here
 .resource-link a {
   color: #2f59a8;
 }
-.resource-link a::after{
+.resource-link a::after {
   color: #a4a6a5;
   font-family: "FontAwesome";
   float: right;
@@ -803,7 +821,7 @@ resources section styling ends here
 .footer-icon-container > a {
   color: #dce2eb;
 }
-.footer-icon-container a::before{
+.footer-icon-container a::before {
   color: #dce2eb;
   font-family: "FontAwesome";
   float: left;
@@ -862,7 +880,8 @@ resources section styling ends here
 .support-container > a {
   color: #dce2eb;
 }
-.sales-container a::before, .support-container a::before{
+.sales-container a::before,
+.support-container a::before {
   color: #dce2eb;
   font-family: "FontAwesome";
   float: left;
@@ -994,7 +1013,7 @@ resources section styling ends here
   color: #524d53;
   font-size: 12px;
 }
-.country-language a::before{
+.country-language a::before {
   color: #524d53;
   font-family: "FontAwesome";
   float: left;
@@ -1026,6 +1045,107 @@ resources section styling ends here
 =================================*/
 
 /*media query starts*/
+/*media query for 320px starts here*/
+@media only screen and (max-width: 320px) {
+}
+
+/*media query for 375px starts here*/
+@media only screen and (max-width: 375px) {
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  html {
+    width: 50%;
+  }
+}
+
+/*media query for 560px starts here*/
+@media only screen and (max-width: 560px) {
+}
+
+/*media query for 640px starts here*/
+@media only screen and (max-width: 640px) {
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  html {
+    width: 65%;
+  }
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+}
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+}
+
+/*media query for 1280px starts here*/
+@media only screen and (max-width: 1280px) {
+  /* main heading and sub heading */
+  .main-header {
+    align-items: flex-start;
+  }
+
+  .header-nav,
+  .sub-header {
+    align-items: flex-start;
+  }
+
+  .header-nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-nav-links {
+    height: 0;
+    position: relative;
+    top: 50px;
+    opacity: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-nav-links > ul {
+    flex-direction: column;
+  }
+}
+
+/*media query for 1366px starts here*/
+@media only screen and (max-width: 1366px) {
+}
+
+/*media query for 1440px starts here*/
+@media only screen and (max-width: 1440px) {
+}
+
+/*media query for 1920px starts here*/
+@media only screen and (max-width: 1920px) {
 }
