@@ -266,7 +266,7 @@ header .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 14rem;
+  gap: 8rem;
   transition: all 0.3s;
 }
 
@@ -288,17 +288,18 @@ header .wrapper {
 
 .hamburger {
   display: none;
+  float: right;
   cursor: pointer;
 }
 
 .bar {
+  width: 18px;
+  height: 2px;
+  margin: 4px;
   display: block;
-  text-indent: -9999px;
-  height: 3px;
   background-color: #a4a6a5;
-  margin: 5px;
-  width: 25px;
   transition: all 0.5s ease-out;
+  text-indent: -9999px;
 }
 
 .uppercase {
@@ -326,7 +327,7 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 90.5%;
+  gap: 2.25rem;
 }
 
 .cart-search a {
@@ -393,6 +394,7 @@ banner section styling starts here
 =================================*/
 .banner-section {
   padding-bottom: 94px;
+  position: relative;
   background: url("https://dummyimage.com/1350x525/4d444d/4f505e");
   background-repeat: no-repeat;
   background-size: cover;
@@ -517,15 +519,9 @@ banner section styling starts here
 }
 
 .video-btn {
-  width: 15%;
-  padding: 10px;
-  border: 2px solid #e9e9ea;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 .video-btn a {
   color: #e9e9ea;
@@ -537,6 +533,8 @@ banner section styling starts here
 }
 
 .video-play {
+  padding: 10px;
+  border: 2px solid #e9e9ea;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -561,6 +559,7 @@ digital section styling starts here
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* flex-wrap: wrap; */
   gap: 5.75%;
 }
 
@@ -590,11 +589,10 @@ digital section styling starts here
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /* -ms-flex-wrap: wrap; */
-  /* flex-wrap: wrap; */
 }
 .link-container a {
   color: #415877;
+  font-size: 12px;
 }
 
 .link-container a::after {
@@ -1045,42 +1043,16 @@ resources section styling ends here
 =================================*/
 
 /*media query starts*/
-/*media query for 320px starts here*/
-@media only screen and (max-width: 320px) {
+/*media query for 1920px starts here*/
+@media only screen and (max-width: 1920px) {
 }
 
-/*media query for 375px starts here*/
-@media only screen and (max-width: 375px) {
+/*media query for 1440px starts here*/
+@media only screen and (max-width: 1440px) {
 }
 
-/*media query for 480px starts here*/
-@media only screen and (max-width: 480px) {
-  html {
-    width: 50%;
-  }
-}
-
-/*media query for 560px starts here*/
-@media only screen and (max-width: 560px) {
-}
-
-/*media query for 640px starts here*/
-@media only screen and (max-width: 640px) {
-}
-
-/*media query for 768px starts here*/
-@media only screen and (max-width: 768px) {
-  html {
-    width: 65%;
-  }
-}
-
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-}
-
-/*media query for 1024px starts here*/
-@media only screen and (max-width: 1024px) {
+/*media query for 1366px starts here*/
+@media only screen and (max-width: 1366px) {
 }
 
 /*media query for 1280px starts here*/
@@ -1088,11 +1060,21 @@ resources section styling ends here
   /* main heading and sub heading */
   .main-header {
     align-items: flex-start;
+    justify-content: space-between;
+    gap: unset;
   }
 
   .header-nav,
   .sub-header {
     align-items: flex-start;
+  }
+
+  .header-nav{
+    gap: 4rem;
+  }
+
+  .sub-header{
+    justify-content: space-between;
   }
 
   .header-nav-links {
@@ -1102,8 +1084,6 @@ resources section styling ends here
 
   .header-nav-links {
     height: 0;
-    position: relative;
-    top: 50px;
     opacity: 0;
   }
 
@@ -1116,11 +1096,11 @@ resources section styling ends here
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
   }
 
   .footer-container {
@@ -1138,14 +1118,200 @@ resources section styling ends here
   }
 }
 
-/*media query for 1366px starts here*/
-@media only screen and (max-width: 1366px) {
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
 }
 
-/*media query for 1440px starts here*/
-@media only screen and (max-width: 1440px) {
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  .video-play::after{
+    padding-left: 8px;
+    font-size: 36px;
+  }
+
+  .video-btn a{
+    font-size: 14px;
+  }
+
+  .product-container{
+    grid-template-columns: 45px 1fr 225px;
+  }
 }
 
-/*media query for 1920px starts here*/
-@media only screen and (max-width: 1920px) {
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .video-play::after{
+    padding-left: 6px;
+    font-size: 24px;
+  }
+
+  .video-btn a{
+    font-size: 10px;
+  }
+
+  .product-container{
+    grid-template-columns: 40px 1fr 195px;
+    gap: 14px;
+  }
+
+  .main-heading{
+    font-size: 18px;
+  }
+
+  .banner-para{
+    font-size: 12px;
+  }
+
+  .banner-name{
+    font-size: 10px;
+  }
+
+  .hyphen::before{
+    font-size: 9px;
+  }
+
+  .product-description-para, .product-link > a{
+    font-size: 12px;
+  }
+
+  .resource-blogger, .resource-link a{
+    font-size: 12px;
+  }
+
+  .resource-date, .resource-para{
+    font-size: 10px;
+  }
+
+  .all-blogs-btn > a{
+    padding: 14px 10px;
+    font-size: 10px;
+  }
+
+  .footer-icon-container > a, .sales-container > a, .support-container > a{
+    font-size: 10px;
+  }
+
+  .download::before, .digital-radio::before, .back::before{
+    padding-right: 9px;
+    font-size: 16px;
+  }
+
+  .phone::before, .mail::before{
+    font-size: 14px;
+  }
+
+  .facebook::before, .twitter::before, .linkedin::before, .youtube::before{
+    font-size: 22px;
+  }
 }
+
+/*media query for 640px starts here*/
+@media only screen and (max-width: 640px) {
+}
+
+/*media query for 560px starts here*/
+@media only screen and (max-width: 560px) {
+  .sales-box{
+    top: 12%;
+  }
+
+  .digital-description-image{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  .header-nav a{
+    font-size: 10px;
+  }
+  
+  .main-header{
+    gap: 2rem;
+  }
+
+  .header-nav{
+    gap: 2rem;
+  }
+
+  .banner-top .wrapper{
+    gap: 10px;
+  }
+
+  .sales-box a{
+    font-size: 12px;
+  }
+
+  .main-heading{
+    font-size: 14px;
+  }
+
+  .banner-para{
+    max-width: unset;
+  }
+
+  .product-description-para, .product-link > a{
+    font-size: 10px;
+  }
+
+  .product-description-para{
+    max-width: unset;
+  }
+
+  .product-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .resources-container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .digital-para, .link-container, .resource-detail{
+    max-width: unset;
+  }
+
+  .footer-top{
+    flex-direction: column;
+  }
+
+  .digital-download, .sales-support{
+    width: unset;
+  }
+
+  .sales-container, .support-container{
+    min-width: unset;
+  }
+}
+
+/*media query for 375px starts here*/
+@media only screen and (max-width: 375px) {
+  .header-nav, .cart-search{
+    gap: 1rem;
+  }
+
+  .logo > a, .sub-logo > a{
+    font-size: 12px;
+  }
+
+  .banner-top .wrapper{
+    flex-direction: column;
+  }
+
+  .sales-box{
+    position: unset;
+  }
+}
+
+/*media query for 320px starts here*/
+@media only screen and (max-width: 320px) {
+}
+
+
+
+
+
