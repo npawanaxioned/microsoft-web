@@ -172,6 +172,7 @@ sup {
 sup {
   top: -0.7em;
 }
+
 sub {
   bottom: -0.25em;
 }
@@ -188,6 +189,7 @@ sub {
 .cf:after {
   clear: both;
 }
+
 .cf {
   *zoom: 1;
 }
@@ -215,12 +217,14 @@ li {
   width: 74%;
   margin: 0 auto;
 }
+
 /*=================================
   Header styling starts here
 =================================*/
 header .wrapper {
   width: 90%;
 }
+
 /*=================================
   main header styling starts here
 =================================*/
@@ -246,6 +250,7 @@ header .wrapper {
   font-size: 17px;
   font-weight: 600;
 }
+
 .logo a::before {
   color: #757076;
   font-family: "FontAwesome";
@@ -271,6 +276,7 @@ header .wrapper {
 }
 
 .header-nav-links {
+  width: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,6 +316,7 @@ header .wrapper {
   display: flex;
   align-items: center;
 }
+
 .dropdown-container a::after {
   color: #a4a6a5;
   font-family: "FontAwesome";
@@ -333,6 +340,7 @@ header .wrapper {
 .cart-search a {
   text-indent: -9999px;
 }
+
 .cart-search a::before {
   color: #a4a6a5;
   font-family: "FontAwesome";
@@ -352,6 +360,20 @@ header .wrapper {
   content: "\f07a";
   font-size: 18px;
 }
+
+.main-header a:hover {
+  color: #2e59a8;
+}
+
+.logo a:hover:before,
+.cart-search a:hover::before {
+  color: #2e59a8;
+}
+
+.main-header .dropdown-container a:hover::after {
+  color: #2e59a8;
+}
+
 /*=================================
   main header styling ends here
 =================================*/
@@ -377,9 +399,18 @@ header .wrapper {
   gap: 4rem;
 }
 
+.sub-header a:hover {
+  color: #e9e9ea;
+}
+
+.sub-header .dropdown-container a:hover::after {
+  color: #e9e9ea;
+}
+
 .sub-logo > a {
   font-size: 21px;
 }
+
 /*=================================
   sub header styling ends here
 =================================*/
@@ -415,27 +446,11 @@ banner section styling starts here
   align-items: center;
   background-color: #e3e0e8;
 }
+
 .nav-box a {
   color: #333436;
   font-size: 12px;
 }
-
-.dropright-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.dropdown-container a::after {
-  color: #a4a6a5;
-  font-family: "FontAwesome";
-}
-
-/* .dropright::before {
-  content: "\f105";
-  padding: 0 12px;
-  font-size: inherit;
-} */
 
 .sales-box {
   padding: 9px 10px 12px;
@@ -461,6 +476,7 @@ banner section styling starts here
   -ms-flex-align: center;
   align-items: center;
 }
+
 .sales-phone a::before,
 .sales-mail a::before {
   font-family: "FontAwesome";
@@ -523,9 +539,11 @@ banner section styling starts here
   display: -ms-flexbox;
   display: flex;
 }
+
 .video-btn a {
   color: #e9e9ea;
 }
+
 .video-btn a::after {
   color: #e9e9ea;
   font-family: "FontAwesome";
@@ -539,11 +557,22 @@ banner section styling starts here
   align-items: center;
   justify-content: center;
 }
+
 .video-play::after {
   content: "\f144";
   padding-left: 10px;
   font-size: 48px;
 }
+
+.banner-section a:hover,
+.video-btn a:hover::after {
+  color: #2e59a8;
+}
+
+.banner-section .dropdown-container a:hover::after {
+  color: #2e59a8;
+}
+
 /*=================================
 banner section styling ends here
 =================================*/
@@ -590,6 +619,7 @@ digital section styling starts here
   -ms-flex-align: center;
   align-items: center;
 }
+
 .link-container a {
   color: #415877;
   font-size: 12px;
@@ -605,6 +635,12 @@ digital section styling starts here
   padding: 0 8px;
   font-size: inherit;
 }
+
+.link-container > a:hover,
+.link-container > a:hover::after {
+  color: #356ac5;
+}
+
 /*=================================
 digital section styling ends here
 =================================*/
@@ -653,9 +689,11 @@ product section styling starts here
   display: -ms-flexbox;
   display: flex;
 }
+
 .product-link > a {
   color: #415877;
 }
+
 .product-link a::after {
   color: #a4a6a5;
   font-family: "FontAwesome";
@@ -666,6 +704,12 @@ product section styling starts here
 .product-image {
   justify-self: flex-end;
 }
+
+.product-link > a:hover,
+.product-link > a:hover::after {
+  color: #356ac5;
+}
+
 /*=================================
 product section styling ends here
 =================================*/
@@ -685,6 +729,7 @@ resources section styling starts here
   -ms-flex-align: center;
   align-items: center;
 }
+
 .resources-icon-container p::before {
   color: #a4a6a5;
   font-family: "FontAwesome";
@@ -743,9 +788,11 @@ resources section styling starts here
   -ms-flex-align: center;
   align-items: center;
 }
+
 .resource-link a {
   color: #2f59a8;
 }
+
 .resource-link a::after {
   color: #a4a6a5;
   font-family: "FontAwesome";
@@ -762,11 +809,22 @@ resources section styling starts here
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 .all-blogs-btn > a {
   padding: 14px 16px;
   background-color: #2e59a8;
   color: #e9e9ea;
 }
+
+.resource-link > a:hover,
+.resource-link > a:hover::after {
+  color: #356ac5;
+}
+
+.all-blogs-btn > a:hover {
+  color: #fff;
+}
+
 /*=================================
 resources section styling ends here
 =================================*/
@@ -788,6 +846,7 @@ resources section styling ends here
   padding: 62px 0 80px;
   background-color: #356ac5;
 }
+
 .digital-download > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -816,9 +875,11 @@ resources section styling ends here
   -ms-flex-align: center;
   align-items: center;
 }
+
 .footer-icon-container > a {
   color: #dce2eb;
 }
+
 .footer-icon-container a::before {
   color: #dce2eb;
   font-family: "FontAwesome";
@@ -874,10 +935,12 @@ resources section styling ends here
   -ms-flex-align: center;
   align-items: center;
 }
+
 .sales-container > a,
 .support-container > a {
   color: #dce2eb;
 }
+
 .sales-container a::before,
 .support-container a::before {
   color: #dce2eb;
@@ -900,10 +963,12 @@ resources section styling ends here
   gap: 14px;
   background-color: #524d53;
 }
+
 .footer-mid span {
   color: #e9e9ea;
   font-weight: 600;
 }
+
 .submenu a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,15 +978,12 @@ resources section styling ends here
   align-items: center;
   text-indent: -9999px;
 }
+
 .submenu a::before {
-  color: #a4a6a5;
+  color: #e9e9ea;
   font-family: "FontAwesome";
   float: left;
   text-indent: 0;
-}
-
-.footer-mid > .submenu a::before {
-  color: #e9e9ea;
 }
 
 .facebook::before {
@@ -953,6 +1015,7 @@ resources section styling ends here
   padding: 42px 0;
   background-color: #e2dde3;
 }
+
 .footer-bottom .wrapper {
   width: 90%;
 }
@@ -1004,6 +1067,7 @@ resources section styling ends here
   -ms-flex-align: center;
   align-items: center;
 }
+
 .country-language a {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -1011,6 +1075,7 @@ resources section styling ends here
   color: #524d53;
   font-size: 12px;
 }
+
 .country-language a::before {
   color: #524d53;
   font-family: "FontAwesome";
@@ -1038,26 +1103,38 @@ resources section styling ends here
   color: #524d53;
   font-size: 12px;
 }
+
+.footer-icon-container > a:hover,
+.footer-icon-container > a:hover::before {
+  color: #fff;
+}
+
+.sales-container > a:hover,
+.support-container > a:hover {
+  color: #fff;
+}
+
+.sales-container > a:hover::before,
+.support-container > a:hover::before {
+  color: #fff;
+}
+
+.submenu a:hover::before {
+  color: #fff;
+}
+
+.blog-links a:hover,
+.footer-nav a:hover {
+  color: #2d2d31;
+}
+
 /*=================================
   footer styling ends here
 =================================*/
 
 /*media query starts*/
-/*media query for 1920px starts here*/
-@media only screen and (max-width: 1920px) {
-}
-
-/*media query for 1440px starts here*/
-@media only screen and (max-width: 1440px) {
-}
-
-/*media query for 1366px starts here*/
-@media only screen and (max-width: 1366px) {
-}
-
 /*media query for 1280px starts here*/
 @media only screen and (max-width: 1280px) {
-  /* main heading and sub heading */
   .main-header {
     align-items: flex-start;
     justify-content: space-between;
@@ -1069,11 +1146,11 @@ resources section styling ends here
     align-items: flex-start;
   }
 
-  .header-nav{
+  .header-nav {
     gap: 4rem;
   }
 
-  .sub-header{
+  .sub-header {
     justify-content: space-between;
   }
 
@@ -1118,104 +1195,107 @@ resources section styling ends here
   }
 }
 
-/*media query for 1024px starts here*/
-@media only screen and (max-width: 1024px) {
-}
-
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-  .video-play::after{
+  .video-play::after {
     padding-left: 8px;
     font-size: 36px;
   }
 
-  .video-btn a{
+  .video-btn a {
     font-size: 14px;
   }
 
-  .product-container{
+  .product-container {
     grid-template-columns: 45px 1fr 225px;
   }
 }
 
 /*media query for 768px starts here*/
 @media only screen and (max-width: 768px) {
-  .video-play::after{
+  .video-play::after {
     padding-left: 6px;
     font-size: 24px;
   }
 
-  .video-btn a{
+  .video-btn a {
     font-size: 10px;
   }
 
-  .product-container{
+  .product-container {
     grid-template-columns: 40px 1fr 195px;
     gap: 14px;
   }
 
-  .main-heading{
+  .main-heading {
     font-size: 18px;
   }
 
-  .banner-para{
+  .banner-para {
     font-size: 12px;
   }
 
-  .banner-name{
+  .banner-name {
     font-size: 10px;
   }
 
-  .hyphen::before{
+  .hyphen::before {
     font-size: 9px;
   }
 
-  .product-description-para, .product-link > a{
+  .product-description-para,
+  .product-link > a {
     font-size: 12px;
   }
 
-  .resource-blogger, .resource-link a{
+  .resource-blogger,
+  .resource-link a {
     font-size: 12px;
   }
 
-  .resource-date, .resource-para{
+  .resource-date,
+  .resource-para {
     font-size: 10px;
   }
 
-  .all-blogs-btn > a{
+  .all-blogs-btn > a {
     padding: 14px 10px;
     font-size: 10px;
   }
 
-  .footer-icon-container > a, .sales-container > a, .support-container > a{
+  .footer-icon-container > a,
+  .sales-container > a,
+  .support-container > a {
     font-size: 10px;
   }
 
-  .download::before, .digital-radio::before, .back::before{
+  .download::before,
+  .digital-radio::before,
+  .back::before {
     padding-right: 9px;
     font-size: 16px;
   }
 
-  .phone::before, .mail::before{
+  .phone::before,
+  .mail::before {
     font-size: 14px;
   }
 
-  .facebook::before, .twitter::before, .linkedin::before, .youtube::before{
+  .facebook::before,
+  .twitter::before,
+  .linkedin::before,
+  .youtube::before {
     font-size: 22px;
   }
 }
 
-/*media query for 640px starts here*/
-@media only screen and (max-width: 640px) {
-}
-
 /*media query for 560px starts here*/
 @media only screen and (max-width: 560px) {
-  .sales-box{
+  .sales-box {
     top: 12%;
   }
 
-  .digital-description-image{
+  .digital-description-image {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
@@ -1224,94 +1304,92 @@ resources section styling ends here
 
 /*media query for 480px starts here*/
 @media only screen and (max-width: 480px) {
-  .header-nav a{
+  .header-nav a {
     font-size: 10px;
   }
-  
-  .main-header{
+
+  .main-header {
     gap: 2rem;
   }
 
-  .header-nav{
+  .header-nav {
     gap: 2rem;
   }
 
-  .banner-top .wrapper{
+  .banner-top .wrapper {
     gap: 10px;
   }
 
-  .sales-box a{
+  .sales-box a {
     font-size: 12px;
   }
 
-  .main-heading{
+  .main-heading {
     font-size: 14px;
   }
 
-  .banner-para{
+  .banner-para {
     max-width: unset;
   }
 
-  .product-description-para, .product-link > a{
+  .product-description-para,
+  .product-link > a {
     font-size: 10px;
   }
 
-  .product-description-para{
+  .product-description-para {
     max-width: unset;
   }
 
-  .product-container{
+  .product-container {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .resources-container{
+  .resources-container {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 10px;
   }
 
-  .digital-para, .link-container, .resource-detail{
+  .digital-para,
+  .link-container,
+  .resource-detail {
     max-width: unset;
   }
 
-  .footer-top{
+  .footer-top {
     flex-direction: column;
   }
 
-  .digital-download, .sales-support{
+  .digital-download,
+  .sales-support {
     width: unset;
   }
 
-  .sales-container, .support-container{
+  .sales-container,
+  .support-container {
     min-width: unset;
   }
 }
 
 /*media query for 375px starts here*/
 @media only screen and (max-width: 375px) {
-  .header-nav, .cart-search{
+  .header-nav,
+  .cart-search {
     gap: 1rem;
   }
 
-  .logo > a, .sub-logo > a{
+  .logo > a,
+  .sub-logo > a {
     font-size: 12px;
   }
 
-  .banner-top .wrapper{
+  .banner-top .wrapper {
     flex-direction: column;
   }
 
-  .sales-box{
+  .sales-box {
     position: unset;
   }
 }
-
-/*media query for 320px starts here*/
-@media only screen and (max-width: 320px) {
-}
-
-
-
-
-
