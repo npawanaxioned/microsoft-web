@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
@@ -237,14 +230,24 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 4rem;
+}
+
+.logo {
+  width: 20%;
 }
 
 .logo > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #757076;
   font-size: 17px;
@@ -265,25 +268,34 @@ header .wrapper {
 }
 
 .header-nav {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 8rem;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .header-nav-links {
-  width: max-content;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 3.5rem;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -304,6 +316,8 @@ header .wrapper {
   margin: 4px;
   display: block;
   background-color: #a4a6a5;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   text-indent: -9999px;
 }
@@ -313,7 +327,11 @@ header .wrapper {
 }
 
 .dropdown-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -331,10 +349,13 @@ header .wrapper {
 }
 
 .cart-search {
+  width: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2.25rem;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .cart-search a {
@@ -396,7 +417,6 @@ header .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 4rem;
 }
 
 .sub-header a:hover {
@@ -405,6 +425,14 @@ header .wrapper {
 
 .sub-header .dropdown-container a:hover::after {
   color: #e9e9ea;
+}
+
+.sub-logo {
+  width: 20%;
+}
+
+.sub-header-nav {
+  width: 48%;
 }
 
 .sub-logo > a {
@@ -443,6 +471,8 @@ banner section styling starts here
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #e3e0e8;
 }
@@ -457,7 +487,6 @@ banner section styling starts here
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
   position: absolute;
   right: 0;
   background-color: #000;
@@ -465,6 +494,10 @@ banner section styling starts here
 
 .sales-box a {
   color: #fff;
+}
+
+.sales-phone {
+  margin-right: 20px;
 }
 
 .sales-phone,
@@ -553,8 +586,14 @@ banner section styling starts here
 .video-play {
   padding: 10px;
   border: 2px solid #e9e9ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -588,11 +627,10 @@ digital section styling starts here
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* flex-wrap: wrap; */
-  gap: 5.75%;
 }
 
 .digital-description {
+  margin-right: 5.75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,11 +638,11 @@ digital section styling starts here
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 26px;
 }
 
 .digital-para {
   max-width: 57.75%;
+  margin: 26px 0;
   color: #2d2d31;
   font-size: 14px;
   word-wrap: break-word;
@@ -677,11 +715,11 @@ product section styling starts here
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 28px;
 }
 
 .product-description-para {
   max-width: 80%;
+  margin: 28px 0;
 }
 
 .product-link {
@@ -750,11 +788,11 @@ resources section styling starts here
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 16%;
 }
 
 .resource-detail {
   max-width: 40%;
+  margin-right: 16%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -762,25 +800,23 @@ resources section styling starts here
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 26px;
-}
-
-.resource-detail:first-child {
-  gap: 22px;
 }
 
 .resource-blogger {
+  margin-top: 22px;
   color: #2d2f32;
   font-size: 16px;
 }
 
 .resource-date,
 .resource-para {
+  margin-top: 26px;
   color: #2d2d31;
   font-size: 14px;
 }
 
 .resource-link {
+  margin-top: 26px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -860,17 +896,21 @@ resources section styling ends here
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 22px;
 }
 
 .footer-icon-container {
   min-width: 50%;
+  margin-bottom: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.footer-icon-container:last-child {
+  margin: 0;
 }
 
 .footer-icon-container > a {
@@ -918,8 +958,11 @@ resources section styling ends here
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 22px;
   background-color: #13204a;
+}
+
+.sales-container {
+  margin-bottom: 22px;
 }
 
 .sales-container,
@@ -957,11 +1000,11 @@ resources section styling ends here
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  gap: 14px;
   background-color: #524d53;
 }
 
 .footer-mid span {
+  margin-right: 14px;
   color: #e9e9ea;
   font-weight: 600;
 }
@@ -1038,7 +1081,13 @@ resources section styling ends here
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 24px;
+}
+
+.blog-links > li {
+  margin-bottom: 24px;
+}
+.blog-links > li:last-child {
+  margin: 0;
 }
 
 .blog-links a {
@@ -1090,7 +1139,13 @@ resources section styling ends here
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+}
+
+.footer-nav-links > ul > li {
+  margin-right: 30px;
+}
+.footer-nav-links > ul > li:last-child {
+  margin: 0;
 }
 
 .footer-nav-links a {
@@ -1133,27 +1188,39 @@ resources section styling ends here
 /*media query for 1280px starts here*/
 @media only screen and (max-width: 1280px) {
   .main-header {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-    gap: unset;
   }
 
   .header-nav,
   .sub-header {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
 
-  .header-nav {
-    gap: 4rem;
-  }
-
   .sub-header {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .header-nav-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+  }
+
+  .cart-search {
+    margin-right: 10px;
   }
 
   .header-nav-links {
@@ -1170,25 +1237,51 @@ resources section styling ends here
   }
 
   .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(6px) rotate(45deg);
+    -ms-transform: translateY(6px) rotate(45deg);
     transform: translateY(6px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+    -ms-transform: translateY(-6px) rotate(-45deg);
     transform: translateY(-6px) rotate(-45deg);
   }
 
   .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    gap: 26px;
+  }
+
+  .footer-container > li {
+    margin-bottom: 26px;
+  }
+  .footer-container > li:last-child {
+    margin: 0;
   }
 
   .footer-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
-    gap: 12px;
   }
 
   .footer-nav-links > ul {
+    margin-top: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .footer-nav-links > ul > li {
+    margin-bottom: 30px;
+  }
+  .footer-nav-links > ul > li:last-child {
+    margin: 0;
   }
 }
 
@@ -1204,6 +1297,7 @@ resources section styling ends here
   }
 
   .product-container {
+    -ms-grid-columns: 45px 1fr 225px;
     grid-template-columns: 45px 1fr 225px;
   }
 }
@@ -1220,6 +1314,7 @@ resources section styling ends here
   }
 
   .product-container {
+    -ms-grid-columns: 40px 14px 1fr 14px 195px;
     grid-template-columns: 40px 1fr 195px;
     gap: 14px;
   }
@@ -1293,9 +1388,16 @@ resources section styling ends here
   }
 
   .digital-description-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 10px;
+  }
+
+  .digital-description {
+    margin-bottom: 10px;
   }
 }
 
@@ -1305,16 +1407,13 @@ resources section styling ends here
     font-size: 10px;
   }
 
-  .main-header {
-    gap: 2rem;
+  .logo {
+    margin-right: 10%;
   }
 
-  .header-nav {
-    gap: 2rem;
-  }
-
-  .banner-top .wrapper {
-    gap: 10px;
+  .cart-search {
+    width: 40%;
+    margin-right: 10%;
   }
 
   .sales-box a {
@@ -1339,14 +1438,24 @@ resources section styling ends here
   }
 
   .product-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
   .resources-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    gap: 10px;
+  }
+
+  .resource-detail {
+    margin-bottom: 10px;
   }
 
   .digital-para,
@@ -1356,6 +1465,9 @@ resources section styling ends here
   }
 
   .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -1372,21 +1484,20 @@ resources section styling ends here
 
 /*media query for 375px starts here*/
 @media only screen and (max-width: 375px) {
-  .header-nav,
-  .cart-search {
-    gap: 1rem;
-  }
-
   .logo > a,
   .sub-logo > a {
     font-size: 12px;
   }
 
   .banner-top .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
   .sales-box {
+    margin-top: 10px;
     position: unset;
   }
 }
