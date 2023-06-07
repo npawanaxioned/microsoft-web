@@ -254,17 +254,9 @@ header .wrapper {
   font-weight: 600;
 }
 
-.logo a::before {
-  color: #757076;
-  font-family: "FontAwesome";
-  float: left;
-  text-indent: 0;
-}
-
-.microsoft::before {
-  content: "\f3ca";
-  padding-right: 7px;
-  font-size: 24px;
+.microsoft{
+  width: auto;
+  height: auto;
 }
 
 .header-nav {
