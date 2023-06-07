@@ -5,13 +5,6 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
@@ -237,18 +230,24 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.logo{
+.logo {
   width: 20%;
 }
 
 .logo > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   color: #757076;
   font-size: 17px;
@@ -273,10 +272,14 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -285,10 +288,14 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -309,6 +316,8 @@ header .wrapper {
   margin: 4px;
   display: block;
   background-color: #a4a6a5;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   text-indent: -9999px;
 }
@@ -318,7 +327,11 @@ header .wrapper {
 }
 
 .dropdown-container a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -340,6 +353,8 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -412,11 +427,11 @@ header .wrapper {
   color: #e9e9ea;
 }
 
-.sub-logo{
+.sub-logo {
   width: 20%;
 }
 
-.sub-header-nav{
+.sub-header-nav {
   width: 48%;
 }
 
@@ -456,6 +471,8 @@ banner section styling starts here
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #e3e0e8;
 }
@@ -479,7 +496,7 @@ banner section styling starts here
   color: #fff;
 }
 
-.sales-phone{
+.sales-phone {
   margin-right: 20px;
 }
 
@@ -569,8 +586,14 @@ banner section styling starts here
 .video-play {
   padding: 10px;
   border: 2px solid #e9e9ea;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -886,7 +909,7 @@ resources section styling ends here
   align-items: center;
 }
 
-.footer-icon-container:last-child{
+.footer-icon-container:last-child {
   margin: 0;
 }
 
@@ -938,7 +961,7 @@ resources section styling ends here
   background-color: #13204a;
 }
 
-.sales-container{
+.sales-container {
   margin-bottom: 22px;
 }
 
@@ -1060,10 +1083,10 @@ resources section styling ends here
   flex-direction: column;
 }
 
-.blog-links > li{
+.blog-links > li {
   margin-bottom: 24px;
 }
-.blog-links > li:last-child{
+.blog-links > li:last-child {
   margin: 0;
 }
 
@@ -1118,10 +1141,10 @@ resources section styling ends here
   display: flex;
 }
 
-.footer-nav-links > ul > li{
+.footer-nav-links > ul > li {
   margin-right: 30px;
 }
-.footer-nav-links > ul > li:last-child{
+.footer-nav-links > ul > li:last-child {
   margin: 0;
 }
 
@@ -1165,25 +1188,38 @@ resources section styling ends here
 /*media query for 1280px starts here*/
 @media only screen and (max-width: 1280px) {
   .main-header {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .header-nav,
   .sub-header {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
 
   .sub-header {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .header-nav-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
-  
-  .cart-search{
+
+  .cart-search {
     margin-right: 10px;
   }
 
@@ -1201,37 +1237,50 @@ resources section styling ends here
   }
 
   .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(6px) rotate(45deg);
+    -ms-transform: translateY(6px) rotate(45deg);
     transform: translateY(6px) rotate(45deg);
   }
 
   .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+    -ms-transform: translateY(-6px) rotate(-45deg);
     transform: translateY(-6px) rotate(-45deg);
   }
 
   .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  .footer-container > li{
+  .footer-container > li {
     margin-bottom: 26px;
   }
-  .footer-container > li:last-child{
+  .footer-container > li:last-child {
     margin: 0;
   }
 
   .footer-nav {
-    flex-direction: column;
-  }
-  
-  .footer-nav-links > ul {
-    margin-top: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  .footer-nav-links > ul > li{
+  .footer-nav-links > ul {
+    margin-top: 12px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .footer-nav-links > ul > li {
     margin-bottom: 30px;
   }
-  .footer-nav-links > ul > li:last-child{
+  .footer-nav-links > ul > li:last-child {
     margin: 0;
   }
 }
@@ -1248,6 +1297,7 @@ resources section styling ends here
   }
 
   .product-container {
+    -ms-grid-columns: 45px 1fr 225px;
     grid-template-columns: 45px 1fr 225px;
   }
 }
@@ -1264,6 +1314,7 @@ resources section styling ends here
   }
 
   .product-container {
+    -ms-grid-columns: 40px 14px 1fr 14px 195px;
     grid-template-columns: 40px 1fr 195px;
     gap: 14px;
   }
@@ -1337,11 +1388,15 @@ resources section styling ends here
   }
 
   .digital-description-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  .digital-description{
+  .digital-description {
     margin-bottom: 10px;
   }
 }
@@ -1352,11 +1407,11 @@ resources section styling ends here
     font-size: 10px;
   }
 
-  .logo{
+  .logo {
     margin-right: 10%;
   }
 
-  .cart-search{
+  .cart-search {
     width: 40%;
     margin-right: 10%;
   }
@@ -1383,16 +1438,23 @@ resources section styling ends here
   }
 
   .product-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
   .resources-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
-  .resource-detail{
+  .resource-detail {
     margin-bottom: 10px;
   }
 
@@ -1403,6 +1465,9 @@ resources section styling ends here
   }
 
   .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -1425,6 +1490,9 @@ resources section styling ends here
   }
 
   .banner-top .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
