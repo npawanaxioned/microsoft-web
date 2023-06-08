@@ -308,9 +308,9 @@ header .wrapper {
   margin: 4px;
   display: block;
   background-color: #a4a6a5;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   text-indent: -9999px;
 }
 

@@ -14,8 +14,8 @@ navLink.forEach(e => {
   e.addEventListener("click", () => {
     hamburger.classList.remove("active");
     headerNav.classList.remove("active");
-    headerNav.style.opacity = "0";
-    headerNav.style.height = "0";
+    // headerNav.style.opacity = "0";
+    // headerNav.style.height = "0";
   })
 });
 
