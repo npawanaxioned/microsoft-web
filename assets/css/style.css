@@ -236,6 +236,7 @@ header .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -260,7 +261,7 @@ header .wrapper {
 }
 
 .header-nav {
-  width: 80%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,6 +295,12 @@ header .wrapper {
 .header-nav a {
   color: #333436;
   font-size: 17px;
+}
+
+.search-hamburger{
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .hamburger {
@@ -341,7 +348,7 @@ header .wrapper {
 }
 
 .cart-search {
-  width: 10%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1172,6 +1179,10 @@ resources section styling ends here
   color: #2d2d31;
 }
 
+body{
+  overflow: hidden;
+}
+
 /*=================================
   footer styling ends here
 =================================*/
@@ -1211,13 +1222,28 @@ resources section styling ends here
     align-items: flex-start;
   }
 
-  .cart-search {
-    margin-right: 10px;
+  .header-nav-links > li{
+    margin: 10px 5%;
   }
 
-  .header-nav-links {
-    height: 0;
-    opacity: 0;
+  .cart-search {
+    width: 40%;
+    margin-right: 12%;
+  }
+ 
+  .main-header .header-nav-links{
+    width: 30%;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    right: -36%;
+    background-color: #858991;
+  }
+
+  .main-header .header-nav-links.active{right: -6%;}
+
+  .sub-header .header-nav-links {
+    display: none;
   }
 
   .hamburger {
@@ -1403,9 +1429,12 @@ resources section styling ends here
     margin-right: 10%;
   }
 
-  .cart-search {
+  .search-hamburger{
     width: 40%;
-    margin-right: 10%;
+  }
+
+  .cart-search {
+    width: 50%;
   }
 
   .sales-box a {
@@ -1479,6 +1508,10 @@ resources section styling ends here
   .logo > a,
   .sub-logo > a {
     font-size: 12px;
+  }
+
+  .search-hamburger{
+    width: 50%;
   }
 
   .banner-top .wrapper {
