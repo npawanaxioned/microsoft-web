@@ -1237,7 +1237,7 @@ body{
     z-index: 1;
     top: 100%;
     right: -36%;
-    background-color: #858991;
+    background-color: #ebe9eb;
   }
 
   .main-header .header-nav-links.active{right: -6%;}
